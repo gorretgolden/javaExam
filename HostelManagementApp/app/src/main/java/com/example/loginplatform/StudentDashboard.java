@@ -1,48 +1,45 @@
-package com.example.hostelmanagementapp;
+package com.example.loginplatform;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.ClipData;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
-
-
-    GridView simpleList;
-
+public class StudentDashboard extends Activity {
     Button hostel;
-
-    ArrayList birdList=new ArrayList<>();
+    TextView logout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-   TextView student;
+        setContentView(R.layout.student_dashboard);
 
-        // create a arraylist of the type NumbersView
+
         final ArrayList<NumbersView> arrayList = new ArrayList<NumbersView>();
-        hostel = (Button)findViewById(R.id.btnHostel);
 
+        hostel = (Button)findViewById(R.id.btnHostel);
+        logout = (TextView) findViewById(R.id.tvStudentLogout);
 
 
         hostel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent1 = new Intent(getApplicationContext(), HostelDetails.class);
-          startActivity(intent1);
+                startActivity(intent1);
             }
         });
 
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentLogout = new Intent(getApplicationContext(), StudentLoginActivity.class);
+                startActivity(intentLogout);
+            }
+        });
 
 
 
@@ -62,24 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         // set the numbersViewAdapter for ListView
         numbersListView.setAdapter(numbersArrayAdapter);
+
+
     }
-
-
-
-//
-//        admin.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//               Intent intent1 = new Intent(getApplicationContext(), AdminDashboard.class);
-//                startActivity(intent1);
-//            }
-//        });
-//
-//        student.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent1 = new Intent(getApplicationContext(), StudentDashboard.class);
-//                startActivity(intent1);
-//            }
-//        });
-    }
+}

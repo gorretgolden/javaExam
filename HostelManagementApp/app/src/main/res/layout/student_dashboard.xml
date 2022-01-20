@@ -5,39 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="15dp"
     tools:context=".StudentDashboard"
     >
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/holo_green_light"
         >
         <TextView
             android:id="@+id/tvStudentDashboard"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
             android:textAppearance="?android:textAppearanceLarge"
-            android:text="Student Profile"
+            android:text="@string/student_profile"
 
             />
-<!--        <TextView-->
-<!--            android:id="@+id/tvWelcomeMsg"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="3"-->
-<!--            android:textAppearance="?android:textAppearanceLarge"-->
-<!--            android:text="@string/welcome"-->
 
-            />
         <TextView
-            android:id="@+id/tvUserLogout"
+            android:id="@+id/tvStudentLogout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/logout"
-            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
             android:gravity="center_horizontal"
 
             />
@@ -49,6 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:padding="15dp"
         >
 
 
@@ -79,7 +77,15 @@
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         >
-
+        <Button
+            android:id="@+id/btnHostel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+             android:background="@android:color/holo_green_light"
+            android:text="@string/view_hostel_details"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -87,16 +93,12 @@
             android:text="@string/available_hostels"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:layout_marginStart="10dp"
             android:gravity="center_horizontal"
 
             />
 
-        <Button
-            android:id="@+id/btnHostel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/view_hostel_details"
-/>
+
     </LinearLayout>
 
     <ListView

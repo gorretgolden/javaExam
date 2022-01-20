@@ -1,4 +1,4 @@
-package com.example.hostelmanagementapp;
+package com.example.loginplatform;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -9,18 +9,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class AdminLoginActivity  extends Activity {
+public class AdminLoginActivity extends Activity {
 
     EditText adminUsername, adminPassword;
     Button adminLogin;
-    final String userName="sobhit2017";
-    final String passWord="kumar2017";
+    final String userName="gorret";
+    final String passWord="golden2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_login_layout);
-//        getSupportActionBar().setTitle("Admin Login");
+
 
 
         adminUsername= (EditText) findViewById(R.id.etAdminUserName);
@@ -35,8 +35,7 @@ public class AdminLoginActivity  extends Activity {
 
                 if((userName.equals(adminUsername.getText().toString())) && (passWord.equals(adminPassword.getText().toString()))){
                     Toast.makeText(getBaseContext()," login Successful...", Toast.LENGTH_SHORT).show();
-                    Intent startAdminDashboard = new Intent(getApplicationContext(), AdminLoginActivity.class);
-//                    intent = new Intent(getApplicationContext(),HomeActivity.class);
+                    Intent startAdminDashboard = new Intent(getApplicationContext(), AdminDashboard.class);
                     startActivity(startAdminDashboard);
 
                 }else{
@@ -53,6 +52,5 @@ public class AdminLoginActivity  extends Activity {
     public void onBackPressed() {
         moveTaskToBack(true);
     }
-
 
 }

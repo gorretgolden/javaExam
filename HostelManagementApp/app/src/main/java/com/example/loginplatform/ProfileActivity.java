@@ -1,4 +1,4 @@
-package com.example.hostelmanagementapp;
+package com.example.loginplatform;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,28 +7,31 @@ import android.view.View;
 import android.widget.Button;
 
 public class ProfileActivity extends Activity {
+
     Button btnAdmin;
     Button btnStudent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.hotel_details);
+        setContentView(R.layout.profile_layout);
         btnAdmin = (Button)findViewById(R.id.adminUser);
         btnStudent = (Button)findViewById(R.id.studentUser);
+
+
         btnAdmin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent4 = new Intent(getApplicationContext(), AdminLoginActivity.class);
-                startActivity(intent4);
+                Intent intentA = new Intent(getApplicationContext(), AdminLoginActivity.class);
+                startActivity(intentA);
             }
         });
 
         btnStudent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent5 = new Intent(getApplicationContext(), StudentLoginActivity.class);
-                startActivity(intent5);
+                Intent intentS = new Intent(getApplicationContext(), SignUpActivity.class);
+                startActivity(intentS);
             }
         });
 

@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/golden/AndroidStudioProjects/LoginPlatform/app/src/main/res/layout/admin_dashboard_layout.xml" value="0.32149712092130517" />
+        <entry key="..\:/Users/golden/AndroidStudioProjects/LoginPlatform/app/src/main/res/layout/home_layout.xml" value="0.265625" />
+        <entry key="..\:/Users/golden/AndroidStudioProjects/LoginPlatform/app/src/main/res/layout/profile_layout.xml" value="0.638095238095238" />
+        <entry key="..\:/Users/golden/AndroidStudioProjects/LoginPlatform/app/src/main/res/layout/student_registration_layout.xml" value="0.35337552742616035" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

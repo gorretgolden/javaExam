@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="50dp"
     android:layout_gravity="center"
+    android:background="@drawable/main"
     android:padding="15dp"
     tools:context=".AdminLoginActivity"
 >
@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/admin_login_text"
+        android:textColor="@android:color/white"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:textAppearance="?android:textAppearanceLarge"
@@ -27,7 +28,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textColorHint="@android:color/white"
         android:hint="@string/admin_username_hint"
+        android:textColor="@android:color/white"
         />
     <EditText
         android:id="@+id/etAdminPassWord"
@@ -35,14 +38,17 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:layout_marginTop="20dp"
+        android:textColorHint="@android:color/white"
         android:layout_marginBottom="30dp"
         android:hint="@string/admin_password_hint"
+        android:textColor="@android:color/white"
         />
     <Button
         android:id="@+id/bAdminLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:background="@android:color/holo_green_light"
         android:layout_marginTop="30dp"
         android:text="@string/login_admin_btn"/>
 </LinearLayout>

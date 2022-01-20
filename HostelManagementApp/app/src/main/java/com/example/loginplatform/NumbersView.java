@@ -1,5 +1,4 @@
-package com.example.hostelmanagementapp;
-
+package com.example.loginplatform;
 
 public class NumbersView {
 

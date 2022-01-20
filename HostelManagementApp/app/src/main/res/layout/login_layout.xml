@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginStart="50dp"
+        android:textColorHint="@color/white"
+        android:hint="@string/user"
+        android:layout_marginTop="50dp"
+        android:id="@+id/edt_1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/pass1"
+        android:inputType="textPassword"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:textColorHint="@color/white"
+        android:id="@+id/edt_2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:id="@+id/btn2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/log"
+        />
+
+
+
+</LinearLayout>

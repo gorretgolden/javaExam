@@ -1,5 +1,22 @@
 <resources>
-    <string name="app_name">HostelManagementApp</string>
+    <string name="app_name">LoginPlatform</string>
+    <string name="form">Please fill in the form</string>
+    <string name="firstname">Enter first name</string>
+    <string name="secondname">Enter second name</string>
+    <string name="email">Enter email address</string>
+    <string name="contact">Enter your contact</string>
+    <string name="loc">Enter your location</string>
+    <string name="user">Enter username</string>
+    <string name="pass1">Enter passward</string>
+    <string name="pass2">Confirm passward</string>
+    <string name="dob">Enter date of birth</string>
+    <string name="log">Dont have an account?? Register</string>
+    <string name="btn">LOGIN</string>
+    <string name="home">Welcome</string>
+    <string name="next">Next</string>
+    <string name="admin1">Admin</string>
+    <string name="student1">Student</string>
+<!--    <string name="app_name">HostelManagementApp</string>-->
     <string name="admin_login_text">Admin Login</string>
     <string name="admin_username_hint">Admin Username</string>
     <string name="admin_password_hint">Admin Password</string>
@@ -20,8 +37,7 @@
     <string name="confirm_password">Confirm your password</string>
     <string name="register_txt_btn">Register</string>
     <string name="registered">Already have an account? | Login  here</string>
-    <string name="form">Student Registration Form</string>
-    <string name="welcome">Welcome</string>
+    <string name="form2">Student Registration Form</string>
     <string name="logout">Logout</string>
     <string name="admin_welcome">Admin</string>
     <string name="student_welcome">Student</string>
@@ -35,8 +51,11 @@
     <string name="bascon_hostel">Bascon Hostel</string>
     <string name="bascon_hotel_details">Bascon Hotel Details</string>
     <string name="available_hostels">Available Hostels</string>
-    <string name="admin1">Admin</string>
-    <string name="student1">Student</string>
-    <string name="welcome_txt">Welcome</string>
-    <string name="next">Next</string>
+    <string name="welcome">Welcome</string>
+    <string name="select_your_user_profile">Select Your User Profile</string>
+    <string name="student_profile">Student Profile</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="students">STUDENTS</string>
+
+
 </resources>

@@ -1,4 +1,4 @@
-package com.example.hostelmanagementapp;
+package com.example.loginplatform;
 
 import org.junit.Test;
 

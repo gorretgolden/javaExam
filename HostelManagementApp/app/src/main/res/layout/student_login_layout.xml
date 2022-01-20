@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="15dp"
+    android:background="@drawable/main"
     tools:context=".StudentLoginActivity"
   >
 
@@ -17,14 +18,17 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:text="@string/student_login_text"
+        android:textColor="@android:color/white"
         android:textAppearance="?android:textAppearanceLarge"
         />
 
     <EditText
-        android:id="@+id/etUserName"
+        android:id="@+id/etReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
         android:hint="@string/student_reg_number"
         />
     <EditText
@@ -33,11 +37,13 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:layout_marginTop="20dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
         android:layout_marginBottom="20dp"
         android:hint="@string/student_password"
         />
     <Button
-        android:id="@+id/bLogin"
+        android:id="@+id/bStudentLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_green_light"
@@ -47,7 +53,7 @@
 
         />
     <TextView
-        android:id="@+id/tvRegisterHERE"
+        android:id="@+id/regStudent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
